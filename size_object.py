@@ -5,7 +5,6 @@ import numpy as np
 import imutils
 import cv2
 
-
 # Function to show array of images (intermediate results)
 def show_images(images):
     for i, img in enumerate(images):
@@ -69,4 +68,5 @@ for cnt in cnts:
                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 0), 2)
 
 show_images([image])
+
 
