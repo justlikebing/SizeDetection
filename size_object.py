@@ -38,10 +38,6 @@ cnts = imutils.grab_contours(cnts)
 # Remove contours which are not large enough
 cnts = [x for x in cnts if cv2.contourArea(x) > 100]
 
-# cv2.drawContours(image, cnts, -1, (0,255,0), 3)
-
-# show_images([image, edged])
-# print(len(cnts))
 
 # Reference object dimensions
 # Here for reference I have used a 2cm x 2cm square
@@ -73,3 +69,4 @@ for cnt in cnts:
                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 0), 2)
 
 show_images([image])
+
